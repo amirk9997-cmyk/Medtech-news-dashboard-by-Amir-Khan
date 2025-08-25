@@ -1,0 +1,53 @@
+:root{
+  --bg:#0D0D0D;
+  --panel:#121212;
+  --text:#EDEDED;
+  --muted:#A8B3B8;
+  --neon:#00FF85;     /* neon green */
+  --orange:#FF7A00;   /* warm orange */
+  --border:#1E1E1E;
+  --ring: rgba(0,255,133,0.25);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--neon);text-decoration:none}
+a:hover{color:#5CFFB0}
+
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--border);position:sticky;top:0;background:linear-gradient(180deg,#0D0D0D,rgba(13,13,13,0.85));backdrop-filter:blur(4px);z-index:10}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:28px;height:28px;filter:drop-shadow(0 0 6px rgba(0,255,133,.4))}
+.brand h1{font-size:18px;margin:0;letter-spacing:.4px}
+
+.nav a{margin-left:16px;padding:8px 12px;border-radius:8px;border:1px solid var(--border)}
+.nav a.active{border-color:var(--neon);box-shadow:0 0 12px var(--ring) inset}
+
+.controls{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:16px 20px}
+.filters{display:flex;gap:10px;flex-wrap:wrap}
+.chip{background:var(--panel);border:1px solid var(--border);color:var(--text);padding:8px 12px;border-radius:999px;cursor:pointer}
+.chip:hover{border-color:var(--orange)}
+.chip.active{border-color:var(--neon);box-shadow:0 0 0 3px var(--ring)}
+
+.search input{background:var(--panel);border:1px solid var(--border);color:var(--text);padding:10px 12px;border-radius:10px;min-width:260px;outline:none}
+.search input:focus{border-color:var(--neon);box-shadow:0 0 0 3px var(--ring)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;padding:0 20px 40px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease, box-shadow .2s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,0,0,.45), 0 0 0 1px rgba(255,122,0,.35) inset}
+
+.image-link,.thumb{display:block;width:100%;height:168px}
+.thumb{object-fit:cover;background:#0a0a0a}
+
+.card-body{padding:14px}
+.meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.badge{font-size:12px;background:linear-gradient(90deg,var(--orange),#FF9A3D);color:#0B0B0B;padding:4px 8px;border-radius:999px;font-weight:600}
+.date{color:var(--muted);font-size:12px}
+.title{font-size:16px;margin:8px 0 6px;line-height:1.35}
+.summary{color:#D0D6D8;font-size:14px;line-height:1.5;min-height:64px}
+.footer{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+.source{color:var(--muted);font-size:12px}
+.readmore{color:#111;background:var(--neon);padding:8px 10px;border-radius:10px;font-weight:700}
+.readmore:hover{filter:brightness(1.05)}
+
+.site-footer{border-top:1px solid var(--border);padding:16px 20px;color:var(--muted)}
+@media (min-width:1200px){ .thumb{height:190px} }
