@@ -1,0 +1,34 @@
+{
+  "global": [
+    {
+      "title": "Medtronic Adds Board Seats",
+      "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118",
+      "summary": "Medtronic appointed two new board members and formed committees focusing on AI and robotics innovation.",
+      "source": "https://www.medtechdive.com/news/medtronic-board-seats",
+      "category": "M&A"
+    },
+    {
+      "title": "AI in Medtech Booms with FDA Approvals",
+      "image": "https://images.unsplash.com/photo-1530497610245-94d3c16cda31",
+      "summary": "FDA cleared 1,200+ AI-powered devices in 2025, with radiology leading and cardiology/neurology ramping.",
+      "source": "https://www.medtechdive.com/news/ai-in-medtech",
+      "category": "AI"
+    }
+  ],
+  "indian": [
+    {
+      "title": "India Boosts Medtech Manufacturing",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "summary": "PLI scheme propels manufacturing; India targets a $50B market by 2030 with startup-friendly reforms.",
+      "source": "https://economictimes.indiatimes.com/industry/healthcare/pli-scheme-medtech",
+      "category": "Regulatory"
+    },
+    {
+      "title": "Poly Medicure Expands Exports",
+      "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118",
+      "summary": "Poly Medicure plans to expand capacity and exports across key markets.",
+      "source": "https://www.medicaldialogues.in/poly-medicure-expansion",
+      "category": "Funding"
+    }
+  ]
+}
